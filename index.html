@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/index.css">
+    <title>Grupo Orsa</title>
+</head>
+<body>
+    <!-- Pantalla de bienvenida -->
+    <div id="welcome-screen">
+        <h1 class="block-effect" style="--td: 1.2s">
+            <div class="block-reveal" style="--bc: #0d2147; --d: .1s">Bienvenido, somos</div>
+            <div class="block-reveal" style="--bc: #14529d; --d: .5s">Grupo Orsa</div>
+        </h1>
+    </div>
+
+    <script>
+        // Calcular el tiempo total de las animaciones
+        // Aquí estamos asumiendo que la animación más larga termina en 1.7 segundos (1.2s + 0.5s)
+        const totalAnimationTime = 2900; // tiempo en milisegundos
+
+        // Función para redireccionar
+        function redirectAfterAnimations() {
+            setTimeout(function() {
+                window.location.href = 'home_Orsa.html'; 
+            }, totalAnimationTime);
+        }
+
+        // Llamar a la función cuando la página carga
+        window.onload = redirectAfterAnimations;
+    </script>
+</body>
+</html>

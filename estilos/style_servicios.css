@@ -1,0 +1,166 @@
+/* Definición de colores elegantes basados en los tonos del logo */
+:root {
+    --primary-color: #002d62; /* Azul oscuro del logo */
+    --secondary-color: #4b4b4b; /* Gris oscuro del logo */
+    --accent-color: #ffffff; /* Blanco puro del logo */
+    --highlight-color: #6094c3; /* Azul claro del logo */
+    --background-color: #f5f6fa; /* Fondo suave casi blanco */
+    --tertiary-color: #2b3a67; /* Azul medio oscuro para elementos secundarios */
+}
+
+/* Estilos del navbar */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: var(--primary-color);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav img {
+    height: 100px;
+    transition: transform 0.3s;
+}
+
+nav img:hover {
+    transform: scale(1.1);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li:first-child {
+    margin-left: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--accent-color);
+    font-size: 16px;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav ul li a:hover {
+    color: var(--primary-color);
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+nav ul li a.active {
+    color: var(--primary-color);
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Estilos básicos */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Tipografía moderna y limpia */
+    background-color: var(--background-color);
+    color: var(--secondary-color);
+    margin: 0;
+    padding: 0;
+    line-height: 1.75; /* Mayor espacio entre líneas para mejorar la lectura */
+}
+
+/* Cabecera */
+
+
+/* Principal */
+
+
+/* estilos del footer */
+
+footer {
+    background-color: var(--tertiary-color);
+    color: var(--accent-color);
+    padding: 40px 20px; /* Aumentar el padding para más espacio */
+    text-align: center;
+    animation: fadeIn 1s ease-out;
+    border-top: 3px solid var(--highlight-color); /* Línea superior */
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1); /* Sombra superior */
+    font-size: 0.9em; /* Ajustar el tamaño de la fuente */
+}
+
+
+footer p {
+    margin: 10px 0; /* Añadir margen vertical */
+    line-height: 1.5; /* Espaciado de líneas */
+}
+
+footer a {
+    color: var(--highlight-color);
+    text-decoration: none;
+    padding: 0 10px; /* Espacio entre enlaces */
+    transition: color 0.3s, transform 0.3s;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: #487a9e; /* Color más oscuro en el hover */
+    transform: scale(1.1); /* Aumento de tamaño en el hover */
+}
+
+footer img {
+    margin: 0 10px; /* Espacio entre iconos */
+    transition: transform 0.3s;
+}
+
+footer img:hover {
+    transform: scale(1.2); /* Aumento de tamaño en el hover */
+}
+
+.footer-social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0; /* Espacio entre las secciones */
+}
+
+.footer-separator {
+    width: 50%;
+    height: 2px;
+    background-color: var(--accent-color);
+    margin: 20px auto; /* Centrando el separador */
+}
+
+/* Animaciones */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInUp {
+    from {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
